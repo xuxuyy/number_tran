@@ -8,7 +8,8 @@ def aws_fun():
         show.set('回答正确')
     else:
         show.set('回答错误，正确答案是'+ str(result))
-    aws_show=Label(main,textvariable=show).pack()
+    aws_show=Label(main,textvariable=show)
+    aws_show.pack()
     # print(aws_vlaue.get())
 def aws_flush():
     global result
@@ -29,14 +30,14 @@ def train():
 
     main.geometry("400x400")
     aws_flush()
-
-    first_number=Label(main,textvariable=fn).pack()
-    second_number = Label(main, textvariable=sn).pack()
+    print(fn.get(), sn.get())
+    # first_number = Label(main, text=fn.get()).pack()
+    first_number = Label(main,textvariable=fn)
+    first_number.pack()
+    second_number = Label(main,textvariable=sn)
+    second_number.pack()
     aws=Entry(main,state="normal",textvariable=aws_vlaue).pack()
     aws_button=Button(main,text="正确答案",command=aws_fun).pack()
     next_button=Button(main,text="下一题",command=aws_flush).pack()
 
-
-
     main.mainloop()
-train()
