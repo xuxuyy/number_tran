@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f1447f6-6e16-4656-b64b-da8f7e32ce2d" name="Default Changelist" comment="root_tk_4.28">
+      <change afterPath="$PROJECT_DIR$/myweb/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_tk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root.py" beforeDir="false" afterPath="$PROJECT_DIR$/root.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/app_firest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/app_firest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/myweb/urls.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +16,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/root.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1556467671631" expanded="true" signature="206:207" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,7 +100,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test" />
+    <property name="last_opened_file_path" value="D:/应用/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -87,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.root">
+  <component name="RunManager" selected="Python.new_tk">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="number" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,9 +202,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.root" />
         <item itemvalue="Python.new_tk" />
         <item itemvalue="Python.1" />
+        <item itemvalue="Python.root" />
         <item itemvalue="Python.449" />
       </list>
     </recent_temporary>
@@ -240,7 +268,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17833553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17833553" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,16 +305,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tran.py" />
     <entry file="file://$PROJECT_DIR$/gogo.py" />
-    <entry file="file://$USER_HOME$/Desktop/test/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <marker date="1555512065109" expanded="true" signature="0:211" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/test/1.py" />
     <entry file="file://$PROJECT_DIR$/root.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -300,8 +319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="314">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
