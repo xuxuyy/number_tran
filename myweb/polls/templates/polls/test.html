@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- 结构性标签 -->
+    <!-- 文章主体内容 -->
+    <article>
+        <!-- hearder头部内容-->
+        <header>
+            <!-- 标题 -->
+            <h3>iOS指南针</h3>
+            <p>分类:iOS开发 随手笔记</p>
+            <hr>
+        </header>
+        <!-- 将内容添加到一个div内,以便统一管理(涉及到后面的CSS样式,这边先知道这样写就好,后面章节会详细讲解) -->
+        <div>
+            <!-- 章节 -->
+            <section>
+                <!-- 段落 -->
+                <p>前言：</p>
+                <p>这个小项目使用到了CoreLocation框架里面的设备朝向功能，对CoreLocation感兴趣的可以翻一下之前的文章</p>
+                <p>有朋友发现一个尴尬的问题（图片的东西2个方向是不对的），原谅我的大意，赶时间就直接百度了张图片，大家注意下就好了哈！sorry~
+                </p>
+                <h2>指南针实现</h2>
+                <p>先来看看效果</p>
+                <!-- 插入图片 -->
+                <img src="http://upload-images.jianshu.io/upload_images/1923109-9cf1d42c0f0808b7.gif?imageMogr2/auto-orient/strip" alt="指南针效果图.gif">
+                <p>项目主要部分就是接收到设备朝向后计算出旋转的角度，然后旋转一下我们指南针图片就可以了</p>
+                // 接收到设备朝向<br>
+                - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading<br>
+                {<br>
+                // 判断朝向是否有效<br>
+                if (newHeading.headingAccuracy < 0) {<br>
+                return;<br>
+                }<br><br>
+                // 获取设备朝向<br>
+                CLLocationDirection angle = newHeading.magneticHeading;<br><br>
+                // 将角度转成弧度（角度 / 180.0 * M_PI）<br>
+                CGFloat hudu = angle / 180.0 * M_PI;<br><br>
+                // 因为如果没有动画的话旋转的时候回出现卡顿的现象，为了更流畅，我们给它加个动画<br>
+                [UIView animateWithDuration:0.1 animations:^{<br>
+                // 旋转图片<br>
+                self.comPassImage.transform = CGAffineTransformMakeRotation(-hudu);<br>
+                }];<br><br>
+                }<br>
+                <p>是不是很简单，但是有一点需要注意 —— 调用磁力传感器前我们需要先判断一下设备的磁力计是否可以用，以防止磁力计坏掉而没有运行成功</p>
+                // 判断当前设备磁力计是否正常<br>
+                if (![CLLocationManager headingAvailable]) {<br>
+                return;<br>
+                }<br>
+                <p>考虑到网络速度问题，我将完整的项目放到了国内版的github（码云）上了 ——
+                    <!-- 超链接 -->
+                    <a target="_blank" href="http://git.oschina.net/miaomiaoshen/Compass">网络地址</a>
+                </p>
+                <p>版权声明：本文为博主原创文章，转载请注明出处！</p>
+                <p>顶1 踩0</p>
+            </section>
+        </div>
+        <!-- 尾部内容 -->
+        <footer>
+            <!-- 这边直接用截图代替尾部的分享模块 -->
+            [站外图片上传中……(7)]
+        </footer>
+    </article>
+</body>
+</html>
